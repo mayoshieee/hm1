@@ -1,25 +1,53 @@
 body {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 110%;
+  background-color: rgb(228, 228, 216);
 }
 header {
-  background-color: #d0c8c8;
+  background-color: #abaca7;
 }
-nav {
-  background-color: #bfe5fd;
+.container {
+  display: grid;
+  grid-template-columns:1fr, 1fr; 
+
+}
+ul {
+  display: inline-block; width: 80%;
   color:#010928;
+}
+nav img {
+  width: 10%;
+  position: relative;
+  top: 20px;
 }
 main {
   background-color: #f5eea3;
   font-size: 90%;
 }
+
+.image-grid {
+  display: grid; /* グリッドレイアウトを有効化 */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* 列の幅と数を調整 */
+  justify-content: center; /* 要素を中央寄せ */
+  gap: 20px; /* 画像間の間隔を設定（必要に応じて） */
+}
+
 footer {
   background-color: #d0c8c8;
 }
 li {
-  display: inline-block;
+  padding-block: 30px;
+  display: inline-flex;
   width: 170px;
 }
+nav {
+  list-style-type: none;
+  display: inline-block;
+  flex-direction: row;
+  justify-content:space-between;
+  grid-auto-columns: auto;
+}
+
 h1 {
   text-align: center;
   font-family: Georama, 'Times New Roman', serif;
